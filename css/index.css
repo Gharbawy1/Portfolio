@@ -1,0 +1,112 @@
+@keyframes typing {
+    from { width: 0 }
+    to { width: 60% }
+}
+@keyframes animateline{
+    from {width: 0;}
+    to {width: 50%;}
+}
+
+/*to make the cursor as waiting*/
+@keyframes plink {
+    0% {border-right-color: transparent}
+  50% {border-right-color: orange}
+  100% {border-right-color: transparent}
+}
+@keyframes delayAndAlternate {
+    0% { width: 60%; }
+    100% { width: 60%; }
+}
+body{
+    background-color:  #04101e;
+    font-family: 'Trebuchet MS', sans-serif;
+    background-size: cover;
+}
+.container{
+    display: inline-block; /* to stop the cursor at the last letter of the typewriter element once it has been fully typed out*/
+    color: aliceblue;
+    margin-top: 150px;
+    margin-left: 200px;
+}
+.typeWritet{
+    color: rgb(2, 97, 2);
+    overflow: hidden;
+    white-space: nowrap; /*on the same line*/
+    border-right: .15em solid orange; /*to create type cursor*/
+    width: 0;
+    font-size: 25px;
+    animation:typing 2.5s 1s steps(20,end) infinite alternate , plink 1s infinite;    /*to make sure the text element won’t go back to width: 0 after the animation has finished*/     
+}
+
+/*
+    Profile Section start
+*/
+ ul li a{
+    text-decoration: none;
+    color: white;
+    transition: border-width 0.2s;
+    transition: font-size 1s;
+}
+ul{
+    display: flex;
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+ul li{
+    padding-right: 50px;
+}
+ul li a:hover{
+    font-size: 20px;
+}
+
+ul li a:hover{
+    color: rgb(2, 97, 2);
+    border-bottom: 3px solid goldenrod;
+    border-bottom-right-radius: 45%;
+    border-bottom-left-radius: 10%;
+}
+/*
+   Emails Start
+*/
+.emails{
+    display: flex;
+}
+.emails a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.1);
+    padding-right: 20px;
+    background-color: #04101e;
+}
+.emails a svg{
+    width:19px;
+    height:19px;
+    transition: height 1.5s;
+}
+
+.emails a svg:hover{
+    color: rgb(2, 97, 2);
+    height: 25px;
+    width: 25px;
+}
+/* Home page end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

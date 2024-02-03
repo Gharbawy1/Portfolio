@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link href="css/about.css" rel="stylesheet">
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class = "navbar" >
+            <div>
+                <b><p class="logo">Ahmed </p></b>
+            </div>  
+            <div class="links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li ><a href="about.html" style="color: green;border-bottom: 1.5px solid goldenrod;
+                        border-bottom-right-radius: 45%;
+                        border-bottom-left-radius: 10%;">About</a></li>
+                    <li ><a href="Eduction.html">Education</a></li>
+                    <li ><a href="https://drive.google.com/file/d/1LJYjP_TqMzviax-fmB7lEMsGc61CX_m9/view?usp=drive_link" target="_blank">Resume</a></li>
+                    <li ><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown-container">
+                <div class="menuicon" onclick="toggleDropdown()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="dropdown-content">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Education</a>
+                </div>
+            </div>
+            <script>
+                function toggleDropdown() {
+                  // Toggle the "active" class on the dropdown container
+                  var dropdownContainer = document.querySelector('.dropdown-container');
+                  dropdownContainer.classList.toggle('active');
+                }
+            </script>
+        </div>
+    </header>
+    <p class="abt">ABOUT  
+    </p>
+    
+    
+    
+    <div class="main">    
+            <img src="img\photo_2024-02-02_17-16-56.jpg" width="300px" height="350px">
+        <div class="description">
+                <p>
+                I'm a junior software engineer specializing in scalable web
+                development, with a particular focus on the .NET stack. My
+                expertise lies in backend programming and database management,
+                where I excel at creating efficient and secure systems. I'm also
+                highly interested in cloud and network technologies, and I enjoy
+                leveraging platforms like Azure and AWS to build robust
+                applications.
+                </p>
+                <p>
+                    Proficient in languages such as C#, JS, and Python, I prioritize
+                    building scalable RESTful APIs that deliver optimal performance. I
+                    have hands-on experience with Microsoft SQL Server and possess a
+                    deep understanding of database design and optimization. Seamlessly
+                    integrating applications with databases using tools like Entity
+                    Framework is one of my core strengths.
+                </p>
+                <p>
+                    Beyond the .NET stack, I'm adaptable to other frameworks like
+                    FastAPI and Node JS, enabling me to work effectively in diverse
+                    programming environments. I'm constantly seeking opportunities for
+                    learning and growth, and I value collaboration, teamwork, and open
+                    communication. Working alongside experienced professionals to
+                    contribute to a dynamic tech team is something I'm passionate
+                    about.
+                </p>
+                <p>
+                    Beyond the .NET stack, I'm adaptable to other frameworks like
+                    FastAPI and Node JS, enabling me to work effectively in diverse
+                    programming environments. I'm constantly seeking opportunities for
+                    learning and growth, and I value collaboration, teamwork, and open
+                    communication. Working alongside experienced professionals to
+                    contribute to a dynamic tech team is something I'm passionate
+                    about.
+                </p>
+        
+                <div class="Information-section">
+                    <div class="row-1">
+                        <ul>
+                            <li><b>Birthday</b> : 1 Jun 2004</li>
+                            <li><b>City : </b>  Cairo, EG</li>
+                        </ul>
+                    </div>
+                    <div class="row-2">
+                        <ul>
+                            <li><b>Contact : </b>+20 122-430-9198</li>
+                            <li><b>Email : </b> ahmedelghrabawy28@gmail.com</li>
+                        </ul>
+                    </div>
+        
+                </div>
+        
+            </div>
+        
+        
+    </div>
+    <div class="interests container">
+        <div class="section-title">
+            <h2>Interests</h2>
+        </div>
+        <div class="row">
+            <div class="icon-box">
+                <i class="ri-global-line" style="color: #ffbb2c"></i>
+                <h3>Software Development</h3>
+            </div>
+       
+            <div class="icon-box">
+                <i class="ri-database-2-line" style="color: #5578ff"></i>
+                <h3>Database</h3>
+            </div>
+            <div class="icon-box">
+                <i class="ri-camera-3-line" style="color: #e80368"></i>
+                <h3>Computer Vision</h3>
+            </div>
+            <div class="icon-box">
+                <i class="ri-git-branch-line" style="color: #28a745;"></i>
+                <h3>Data Structres</h3>
+            </div>
+            <div class="icon-box">
+                <i class="ri-code-s-slash-fill" style="color: #28a745"></i>
+                <h3>Software Engineering</h3>
+            </div>
+            <div class="icon-box">
+                <i class="ri-bar-chart-box-line" style="color: #f1081f"></i>
+                <h3>Visualization</h3>
+            </div>
+            <div class="icon-box">
+                <i class="ri-file-list-3-line" style="color: #47aeff"></i>
+                <h3>Algorithms</h3>
+            </div>
+            <div class="icon-box">
+                <i class="ri-bug-line" style="color: #ffc107"></i>
+                <h3>Problem Solving</h3>
+            </div>
+        
+    </div>
+    
+    
+</body>
+</html>
