@@ -1,6 +1,6 @@
 @keyframes typing {
     from { width: 0 }
-    to { width: 60% }
+    to { width: 28% }
 }
 @keyframes animateline{
     from {width: 0;}
@@ -23,11 +23,71 @@ body{
     background-size: cover;
 }
 .container{
-    display: inline-block; /* to stop the cursor at the last letter of the typewriter element once it has been fully typed out*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     color: aliceblue;
     margin-top: 150px;
     margin-left: 200px;
 }
+@media (max-width:992px) {
+    .container{
+        align-items: center;
+        margin-left: 0px;
+        margin-top: 200px;
+    }
+    .container ul li{
+        padding-right: 20px;
+        font-size: 21px;
+    }
+    .menuicon button{
+        color: white !important;
+        background-color: transparent !important;
+        border: none;
+        width: fit-content;
+        margin: 10px;
+    }
+    .menuicon button i{
+        font-size: 35px;
+        color: white !important;
+    }
+    .container ul li{
+        display: none;
+    }
+}
+@media (max-width:536px) {
+    .container{
+        margin-top: 100px;
+    }
+    .container ul li{
+        display: none;
+    }
+    .menuicon button{
+        color: white;
+        background-color: transparent;
+        border: none;
+        width: fit-content;
+        margin: 10px;
+    }
+    .menuicon button i{
+        font-size: 35px;
+        color: white;
+    }
+    /*Handle MenuIcon Ended*/
+}
+@media (max-width:762px){
+    .dropedmenu{
+        opacity: 0.4;
+    }
+    .dropedmenu ul{
+        flex-direction: row !important;
+    }
+    
+    .dropedmenu ul li{
+        padding-left: 20px;
+    }
+}
+
 .typeWritet{
     color: rgb(2, 97, 2);
     overflow: hidden;
@@ -41,26 +101,26 @@ body{
 /*
     Profile Section start
 */
- ul li a{
+.container li a{
     text-decoration: none;
     color: white;
     transition: border-width 0.2s;
     transition: font-size 1s;
 }
-ul{
+.container ul{
     display: flex;
     list-style: none;
     padding-inline-start: 0px;
 }
 
-ul li{
+.container  li{
     padding-right: 50px;
 }
-ul li a:hover{
+.container li a:hover{
     font-size: 20px;
 }
 
-ul li a:hover{
+.container  li a:hover{
     color: rgb(2, 97, 2);
     border-bottom: 3px solid goldenrod;
     border-bottom-right-radius: 45%;
@@ -91,12 +151,55 @@ ul li a:hover{
 }
 /* Home page end*/
 
+/*drop down menu start*/
+.dropdown-container ul{
+    list-style: none;
+    display: flex;
+    flex-wrap:wrap;
+    font-size: 20px;
+    transition: font-size 0.5s;
+}
+.dropdown-container ul li a:hover{
+    font-size: 25px;
+    
+}
+.dropedmenu ul li{
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+}
 
+.dropedmenu ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    transition: font-size 1s;
+}
 
+.dropedmenu{
+    border-radius: 5px;
+    width: 40%;
+    display: flex;
+    min-width: 145px;
+    background-color: #0f335e;
+    opacity: 0.4;
+    position: absolute;
+    z-index: 1;
+    margin-left: 20px;
+}
 
+.menuicon button{
+    background-color: #04101e;
+    border: none;
+    cursor: pointer;
+}
 
+.menuicon button i{
+    color: #04101e;
+}
 
-
+#myDropdown.highlight {
+    visibility: visible;
+  }
 
 
 

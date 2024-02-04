@@ -16,8 +16,6 @@ body{
     background-color: #09203a;
     justify-content: space-between;
     height: 70px;
-    
-
 }
 ul{ 
     list-style: none;
@@ -50,14 +48,19 @@ ul li{
     padding-left: 20px;
     font-family: 'Libre Baskerville', serif;
     font-size: 22px;
+    letter-spacing: 2px;
+
 }
 .navbar p::after{
     content: "Elghrabawy";
     color:darkslategrey;
     font-weight: bold;
     font-size:25px;
+    letter-spacing: 3px;
+
 }
 /* Navbar End */
+
 /*About Word Top the profile img start*/
 .abt{
     color: white;
@@ -79,8 +82,8 @@ ul li{
 /*About Me Container start and description*/
 .main{
     display: flex;
+    justify-content: center;
     color: white;
-    padding-left: 240px;
     padding-top:20px;
 }
 
@@ -90,9 +93,8 @@ ul li{
     border-radius: 10px;
 }
 .main img:hover{
-    opacity: 1;
+    opacity: 0.6;
     transform: scale(1.05,1.05);
-
 }
 .description{
         display: flex;
@@ -102,38 +104,34 @@ ul li{
     padding-bottom: 15px;
     font-family: "Open Sans", sans-serif;
     font-size: smaller;
-    max-width: 500px;
+    max-width: 600px;
 }
-
 @media(max-width:928px){
     .main {
         flex-direction: column;
         align-items: center;
+        align-items: center;
     }
     .main img{
-        margin-bottom:10px ;
+        margin-bottom:30px ;
         width: 550px;
         height: 660px;
+        opacity: 0.6;
+    }
+    .description{
+        align-items: center;
+    }
+    .Information-section{
+        justify-content: center;
+    }
+    .Information-section ul{
+        padding-right: 0px;
+
     }
     .description p{
         max-width: 580px;
     }
-    .links{
-        display: none;
-    }
-    .menuicon{
-        margin-top: 20px;
-        margin-right: 50px;
-        cursor: pointer;
-    }
-    .menuicon div{
-        width: 25px;
-        height: 3.5px;
-        border: none;
-        border-radius: 25%; 
-        background-color: white;
-        margin: 7px;
-    }
+    
 }
 .Information-section{
     display: flex;
@@ -144,11 +142,11 @@ ul li{
     font-size: 15px;
     font-family: "Open Sans", sans-serif;
 }
-.Information-section ul {
+.Information-section ul{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
 }
+
 .Information-section .row-1 ul li::before {
     content: '\2192'; /* Unicode for less-than sign */
     color: green; /* Change the color to your preferred color */
@@ -156,13 +154,13 @@ ul li{
     font-size: 20px;
     font-weight: bolder;
 }
-  .Information-section .row-2 ul li::before {
+.Information-section .row-2 ul li::before {
     content: '\2192'; /* Unicode for less-than sign */
     color: green; /* Change the color to your preferred color */
     margin-right: 5px; /* Add some space between the arrow and the text */
     font-size: 20px;
     font-weight: bolder;
-  }
+}
 /*About Me End*/
 
 
@@ -186,19 +184,20 @@ ul li{
     background: #dee2e6;
     margin: 4px 10px;
 }
+
 .row{
         display: flex;
-        flex-wrap: wrap;
-        margin-left: 230px;
-        max-width: 900px;
-    }
+justify-content: center;
+ flex-wrap: wrap;
+ max-width: 80%;
+}
 
 .row .icon-box {
     font-size: 11px;
     display: flex;
     padding: 20px;
     margin-bottom: 20px;
-    margin-right: 10px;
+    margin-right: 30px;
     background: #09203a;
     transition: ease-in-out 0.3s;
     color: white;
@@ -220,30 +219,134 @@ ul li{
 
 
 /* In Complete Drop Down Start*/
-.dropdown-content{
-display: none;
-position: absolute;
-text-align: center;
-background-color: #120f0f;
-right: 70px;
-height: 200px;
-box-shadow: 0px 8px 16px 0px rgba(35, 27, 27, 0.2);
+.dropdown-container ul{
+    list-style: none;
+    display: flex;
+    flex-wrap:wrap;
+    font-size: 20px;
+    transition: font-size 0.5s;
 }
-.dropdown-content a{
-    padding-top:20px ;
-    color: white;
-    margin-left: 30px;
-    margin-right: 30px;
+.dropdown-container ul li a:hover{
+    font-size: 25px;
+}
+.dropedmenu ul li{
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+}
 
+.dropedmenu ul li a{
+    color: aliceblue;
     text-decoration: none;
-    border-bottom: 1px solid white;
+    transition: font-size 1s;
+}
 
+.dropedmenu{
+    border-radius: 5px;
+    width: 40%;
+    display: flex;
+    min-width: 145px;
+    background-color: #0f335e;
+    opacity: 0.4;
+    margin-left: 300px;
 }
-.dropdown-container{
-    position: relative;
-    display: inline-block;
+
+.menuicon button{
+    background-color: #09203a;
+    border: none;
+    cursor: pointer;
 }
-.dropdown-container.active .dropdown-content {
-    display: block;
+
+.menuicon button i{
+    color: #09203a;
 }
+
+#myDropdown .highlight {
+    visibility: visible;
+}
+
 /*Drop Down End*/
+@media (max-width:992px) {
+    
+    .container ul li{
+        padding-right: 20px;
+        font-size: 21px;
+    }
+    .navbar .links{
+        display: none;
+    }
+    .menuicon button{
+        color: white !important;
+        background-color: transparent !important;
+        border: none;
+        width: fit-content;
+        margin: 15px;
+    }
+    .menuicon button i{
+        font-size: 35px;
+        color: white !important;
+    }
+    .container ul li{
+        display: none;
+    }
+}
+@media (max-width:427px) {
+    .description p{
+        max-width: 100px;
+    }
+}
+@media (max-width:536px) {
+    .description p{
+        max-width: 450px;
+    }
+    .main img{
+        margin-bottom:30px ;
+        width: 300px;
+        height: 400px;
+        opacity: 0.6;
+    }
+    .container{
+        margin-top: 100px;
+    }
+    .container ul li{
+        display: none;
+    }
+    .menuicon button{
+        color: white;
+        background-color: transparent;
+        border: none;
+        width: fit-content;
+        margin: 10px;
+    }
+    .menuicon button i{
+        font-size: 35px;
+        color: white;
+    }
+    /*Handle MenuIcon Ended*/
+    .row {
+        flex-direction: column;
+align-items: center;
+    }
+    .navbar
+    {
+        width: 100%;
+    }
+    .row .icon-box{
+        width: 80%;
+    }
+    .section-title h2{
+        margin-left: 32px;
+    }
+}
+@media (max-width:762px){
+    .dropedmenu{
+        opacity: 0.4;
+    }
+    .dropedmenu ul{
+        flex-direction: row !important;
+    }
+    
+    .dropedmenu ul li{
+        padding-left: 20px;
+    }
+}
