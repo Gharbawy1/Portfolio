@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
     <title>Personal Portfolio</title>
   </head>
   <body>
@@ -38,9 +38,31 @@
     </div>
     <div class="container">
       <h1>Ahmed Elghrabawy</h1>
-      <p class="typeWritet">
-        <span style="color: aliceblue">I’m</span> Software Engineer . . .
-      </p>   
+      <!-- 
+        Type Writer Start With Typed JS
+       -->
+       <div class="static-typed-written-text">
+        <p> I’m </p>
+        <div id="typed-text" ></div>
+       </div>
+       
+   <script>
+      var typed = new Typed('#typed-text', {
+         strings: [" Software Engineer"],
+         typeSpeed: 80,
+         backSpeed: 100,
+         loop: true,
+         onComplete: function (self) {
+          // Pause for 1 second at the end
+          setTimeout(function () {
+             self.reset(); // Reset the Typed instance
+             self.start(); // Restart the Typed animation
+          }, 5000);
+       }
+     });
+   </script>
+
+
       <ul>
         <li class="ho"><a href="#">Home</a></li>
         <li><a href="about.html">About</a></li>

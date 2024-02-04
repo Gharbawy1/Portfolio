@@ -1,11 +1,3 @@
-@keyframes typing {
-    from { width: 0 }
-    to { width: 28% }
-}
-@keyframes animateline{
-    from {width: 0;}
-    to {width: 50%;}
-}
 
 /*to make the cursor as waiting*/
 @keyframes plink {
@@ -30,11 +22,31 @@ body{
     margin-top: 150px;
     margin-left: 200px;
 }
+/*Type Writer Text*/
+.static-typed-written-text{
+    font-size: 20px;
+}
+.container p{
+    display: inline-block;
+    font-family: monospace;
+    white-space: nowrap;
+    color: white;
+}
+#typed-text{
+    display: inline-block;
+    color: green;
+    width: fit-content;
+    border-bottom:1px solid green;
+    font-family: monospace;
+    font-weight: 800;
+    white-space: nowrap;
+}
+/*End Type Writer*/
 @media (max-width:992px) {
     .container{
         align-items: center;
         margin-left: 0px;
-        margin-top: 300px;
+        margin-top: 150px;
     }
     .container ul li{
         padding-right: 20px;
@@ -55,15 +67,24 @@ body{
         display: none;
     }
 }
+@media (max-width:762px){
+      
+    .dropedmenu{
+        opacity: 0.4;
+    }
+    .dropedmenu ul{
+        flex-direction: row !important;
+    }
+    .dropedmenu ul li{
+        padding-left: 20px;
+    }
+}
+
 @media (max-width:536px) {
     .container{
-        margin-top: 300px;
+        margin-top: 100px;
         font-size: 12px;
     }
-    .container .typeWritet{
-        font-size: 12px;
-        }
-        
     .container ul li{
         display: none;
     }
@@ -80,31 +101,32 @@ body{
     }
     /*Handle MenuIcon Ended*/
 }
-
-@media (max-width:762px){
-    .container .typeWritet {
-        font-size:19px;
-    }   
-    .dropedmenu{
-        opacity: 0.4;
-    }
-    .dropedmenu ul{
-        flex-direction: row !important;
-    }
-    .dropedmenu ul li{
-        padding-left: 20px;
-    }
+@media (max-width:375px) {
+        .container{
+            margin-top: 150px;
+        }
 }
 
-.typeWritet{
-    color: rgb(2, 97, 2);
-    overflow: hidden;
-    white-space: nowrap; /*on the same line*/
-    border-right: .15em solid orange; /*to create type cursor*/
-    width: 0;
-    font-size: 25px;
-    animation:typing 2.5s 1s steps(20,end) infinite alternate , plink 1s infinite;    /*to make sure the text element won’t go back to width: 0 after the animation has finished*/     
-}
+/*
+type writer start we can use "typed js" 
+>> <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+>Typed.js is an animation library supported by java script and other scripting languages
+>It provides the typing animation effect to the text. We can use this library by adding the CDN link
+> var typed = new Typed(element class or Id, callback function);
+>> In the above given syntax the class or id is of the element which is to be targeted for the working of typing animations. The callback function is a function with an array of type string and few type constructor properties such as typing speed, back speed, loop and back speed delay.
+*/
+
+
+
+
+
+
+
+
+
+
+/*type writer end */
+
 
 /*
     Profile Section start
