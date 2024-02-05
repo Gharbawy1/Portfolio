@@ -11,56 +11,6 @@ body{
     font-family: 'Trebuchet MS', sans-serif;
     background-size: cover;
 }
-.navbar{
-    display: flex;
-    background-color: #09203a;
-    justify-content: space-between;
-    height: 70px;
-}
-ul{ 
-    list-style: none;
-    display: flex;
-    padding-right: 150px;
-    font-family: "Poppins", sans-serif;
-}
-ul li{
-    padding: 25px 25px;
-    font-size: smaller;
-}
-.navbar ul li a{
-    color:white;
-    text-decoration: none;
-    transition: color 0.5s;
-    font-size: 15px;
-    transition: font-size 1s;
-
-}
-.navbar ul li a:hover{
-    color: rgb(3, 156, 3);
-    border-bottom: 1.5px solid goldenrod;
-    border-bottom-right-radius: 45%;
-    border-bottom-left-radius: 10%;
-    font-size: 17px;
-}
-.navbar p{
-    color:azure;
-    padding-top: 18px;
-    padding-left: 20px;
-    font-family: 'Libre Baskerville', serif;
-    font-size: 22px;
-    letter-spacing: 2px;
-
-}
-.navbar p::after{
-    content: "Elghrabawy";
-    color:darkslategrey;
-    font-weight: bold;
-    font-size:25px;
-    letter-spacing: 3px;
-
-}
-/* Navbar End */
-
 /*About Word Top the profile img start*/
 .abt{
     color: white;
