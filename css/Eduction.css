@@ -43,9 +43,7 @@ body{
 .nav-link:hover{
     color: green !important;
 }
-.nav-item {
-    box-shadow: 2px 2px 5px rgba(59, 14, 14, 0.2) /* Your custom shadow properties */
-}
+
 /*nav end*/
 
 /*Education title*/
