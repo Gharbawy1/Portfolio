@@ -27,9 +27,9 @@
         <!-- Nav Bar Start -->
         <nav class="navbar navbar-expand-lg navbar-dark" style="height: 100px;">
             <a class="navbar-brand mr-1 ms-5" href="index.html">Ahmed <span style="color:gray;letter-spacing:3px;">Elghrabawy</span></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <button class="navbar-toggler" id="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto ">
                     <li class="nav-item active">
@@ -67,6 +67,14 @@
               navbarMenu.style.zIndex = '999'; // Set a higher z-index value
           });
       });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var navbarToggler = document.getElementById('navbar-toggler');
+      navbarToggler.addEventListener('click', function () {
+          navbarToggler.classList.toggle('active');
+      });
+  });
   </script>
   
     <p class="abt">ABOUT

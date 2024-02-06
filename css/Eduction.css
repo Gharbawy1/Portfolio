@@ -241,7 +241,10 @@ i.bx {
     transition: 0.3s;
   }
 
-
+  .navbar-toggler.active .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M3 3l24 24M27 3L3 27'/%3e%3c/svg%3e");
+    transition: background-image 0.3s ease;
+}
 /*Media Quiers*/
 @media (max-width:990px) {
     .navbar{
