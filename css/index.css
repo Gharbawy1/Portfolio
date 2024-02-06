@@ -1507,7 +1507,7 @@ type writer start we can use "typed js"
     height: 3em;
     width: 1.5em;
     border: 0.25em solid #fff;
-    border-radius: 1em;
+    border-radius: 1em;/*with out it the icon will be a square */
 }
 /*block which contain the icon*/
 .example {
