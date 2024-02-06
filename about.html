@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <!-- BootStrap -->
-    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/all.min.css">
     <!-- Icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!-- JQuery -->
@@ -22,41 +23,33 @@
     
     <header>
         <!-- Nav Bar Start -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <a class="navbar-brand mr-1 ms-5" href="#">Ahmed <span style="color:gray;letter-spacing:3px;">Elghrabawy</span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
-          
+            
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-              </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form>
+                <ul class="navbar-nav m-auto ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://drive.google.com/file/d/1LJYjP_TqMzviax-fmB7lEMsGc61CX_m9/view?usp=drive_link"
+                        >Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Eduction.html">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
             </div>
-          </nav>
+        </nav>
             <!-- Nav Bar End -->
     </header>
     <p class="abt">ABOUT
@@ -125,56 +118,60 @@
             <h2>Interests</h2>
         </div>
         <div class="row">
-            <div class="icon-box">
-                <i class="ri-global-line" style="color: #ffbb2c"></i>
+            <div class="col-lg-3 col-md-4">
+              <div class="icon-box">
+                <i class="ri-global-line" style="color: #ffbb2c;"></i>
                 <h3>Software Development</h3>
+              </div>
             </div>
-            <div class="icon-box">
+            <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+              <div class="icon-box">
                 <i class="ri-database-2-line" style="color: #5578ff"></i>
                 <h3>Database</h3>
+              </div>
             </div>
-            <div class="icon-box">
+            <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+              <div class="icon-box">
                 <i class="ri-camera-3-line" style="color: #e80368"></i>
                 <h3>Computer Vision</h3>
+              </div>
             </div>
-            <div class="icon-box">
-                <i class="ri-git-branch-line" style="color: #28a745;"></i>
-                <h3>Data Structres</h3>
+            <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+              <div class="icon-box">
+                <i class="ri-git-branch-line" style="color: #1c7d32;"></i>
+                <h3>DataStructre</h3>
+              </div>
             </div>
-            <div class="icon-box">
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box">
                 <i class="ri-code-s-slash-fill" style="color: #28a745"></i>
                 <h3>Software Engineering</h3>
+              </div>
             </div>
-            <div class="icon-box">
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box">
                 <i class="ri-bar-chart-box-line" style="color: #f1081f"></i>
                 <h3>Visualization</h3>
+              </div>
             </div>
-            <div class="icon-box">
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box">
                 <i class="ri-file-list-3-line" style="color: #47aeff"></i>
                 <h3>Algorithms</h3>
+              </div>
             </div>
-            <div class="icon-box">
-                <i class="ri-bug-line" style="color: #ffc107"></i>
-                <h3>Problem Solving</h3>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box">
+                <i class="ri-image-line" style="color: #ffc107"></i>
+                <h3>Image Processing</h3>
+              </div>
             </div>
-        </div>
-                <!-- Intersts Section End -->
+          </div>
+        
+        <!-- Intersts Section End -->
 
-        <script>
-            $(document).ready(function () {
-                // Function to toggle the visibility and style of the list
-                function toggleList() {
-                    $("#myDropdown").toggle();
-                    $("#myDropdown").toggleClass("highlight"); // Toggle the 'highlight' class
-                }
-
-                // Event listener for the button click
-                $(document).on("click", "#showListButton", function () {
-                    toggleList();
-                });
-            });
-        </script>
-
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/all.min.js"></script>
 </body>
 
 </html>

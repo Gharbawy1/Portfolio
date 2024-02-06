@@ -4,13 +4,39 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-
 }   
 body{
     background-color:  #04101e;
     font-family: 'Trebuchet MS', sans-serif;
     background-size: cover;
 }
+/*Nav bar start */
+.navbar{
+    background-color: #09203a;
+}
+/*<li>*/
+.nav-item{
+    margin-left: 50px; 
+    transition: border 1s;
+}
+/*<a>*/
+.nav-link:hover{
+    border-bottom: 1.5px solid goldenrod;
+    border-bottom-right-radius: 45%;
+    border-bottom-left-radius: 10%;
+    font-size: larger;
+}
+.nav-link{
+    color: white !important;
+    transition: color 1.5s;
+    transition: font-size 2s;
+}
+.nav-link:hover{
+    color: green !important;
+}
+
+
+
 /*About Word Top the profile img start*/
 .abt{
     color: white;
@@ -56,33 +82,7 @@ body{
     font-size: smaller;
     max-width: 600px;
 }
-@media(max-width:928px){
-    .main {
-        flex-direction: column;
-        align-items: center;
-        align-items: center;
-    }
-    .main img{
-        margin-bottom:30px ;
-        width: 550px;
-        height: 660px;
-        opacity: 0.6;
-    }
-    .description{
-        align-items: center;
-    }
-    .Information-section{
-        justify-content: center;
-    }
-    .Information-section ul{
-        padding-right: 0px;
 
-    }
-    .description p{
-        max-width: 580px;
-    }
-    
-}
 .Information-section{
     display: flex;
     flex-wrap: wrap;
@@ -135,15 +135,14 @@ body{
     margin: 4px 10px;
 }
 
-.row{
+/* .row{
         display: flex;
 justify-content: center;
  flex-wrap: wrap;
  max-width: 80%;
-}
+}*/
 
-.row .icon-box {
-    font-size: 11px;
+.icon-box{
     display: flex;
     padding: 20px;
     margin-bottom: 20px;
@@ -151,31 +150,28 @@ justify-content: center;
     background: #09203a;
     transition: ease-in-out 0.3s;
     color: white;
-    width: 200px;
-    height: 70px;
-    transition: width 1s;
+    line-height:0.75;
+}
+.icon-box i{
+    padding-right: 7px;
+    font-size: 30px;
+}
+.row h3{
+    font-family:"Raleway", sans-serif;;
+    font-size: 16px;
 }
 
-.interests .icon-box i {
-    font-size: 32px;
-    padding-right: 10px;
-    line-height: 1;
-}
 .row .icon-box:hover{
     background-color: #0d315b;
-    width: 210px;
 }
 /*Interst Section End*/
-
-
-/* In Complete Drop Down Start*/
-.dropdown-container ul{
+ul{
     list-style: none;
-    display: flex;
-    flex-wrap:wrap;
-    font-size: 20px;
-    transition: font-size 0.5s;
 }
+
+/* In Complete Drop Down Start */
+/*
+
 .dropdown-container ul li a:hover{
     font-size: 25px;
 }
@@ -213,11 +209,10 @@ justify-content: center;
 
 #myDropdown .highlight {
     visibility: visible;
-}
+}*/
 
 /*Drop Down End*/
-@media (max-width:992px) {
-    
+@media (max-width:992px) {  
     .container ul li{
         padding-right: 20px;
         font-size: 21px;
@@ -240,9 +235,46 @@ justify-content: center;
         display: none;
     }
 }
-@media (max-width:427px) {
+@media(max-width:928px){
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main img{
+        margin-bottom:30px ;
+        width: 550px;
+        height: 660px;
+        opacity: 0.6;
+    }
+    .description{
+        align-items: center;
+    }
+   
+    .Information-section ul{
+        padding-right: 0px;
+
+    }
     .description p{
-        max-width: 100px;
+        max-width: 580px;
+    }
+    
+}
+@media (max-width:762px){
+    .dropedmenu{
+        opacity: 0.4;
+    }
+    .dropedmenu ul{
+        flex-direction: row !important;
+    }
+    
+    .dropedmenu ul li{
+        padding-left: 20px;
+    }
+}
+@media (max-width:823px) {
+    .main img{
+        width: 200px;
+        height: 270px;
     }
 }
 @media (max-width:536px) {
@@ -281,22 +313,50 @@ align-items: center;
     {
         width: 100%;
     }
-    .row .icon-box{
-        width: 80%;
-    }
     .section-title h2{
         margin-left: 32px;
     }
 }
-@media (max-width:762px){
-    .dropedmenu{
-        opacity: 0.4;
+@media (max-width:483px) {
+    .description {
+        margin-left:12px;
+        max-width: 300px;
     }
-    .dropedmenu ul{
-        flex-direction: row !important;
+    .abt {
+        padding-left: 30px;
     }
-    
-    .dropedmenu ul li{
-        padding-left: 20px;
+     img{
+        width: 100px;
+        height: 150px;
     }
 }
+@media (max-width:425px) {
+    .description p{
+        margin-left: 0px;
+        max-width: 150px;
+    }
+    .main img{
+        width: 140px;
+        height: 180px;
+    }
+    .abt {
+        padding-left: 80px;
+    }
+    .navbar-brand{
+        font-size: 10px;
+    }
+    .navbar-toggler{
+        font-size: 10px;
+    }
+}
+@media (max-width:319px) {
+    .abt {
+        padding-left: 30px;
+    }
+    .row .icon-box{
+        padding-left: 30px;
+        margin-bottom: 10px;
+    }
+    
+}
+
