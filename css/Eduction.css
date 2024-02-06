@@ -99,14 +99,7 @@ body{
     margin: 4px 10px;
     vertical-align: middle; /* Align the ::after shape vertically in the middle */
 }
-@media (max-width:865px) {
-    .Contact-Container{
-        flex-wrap: wrap;
-        align-items: center;
-        flex-direction: column;
-    }
-   
-}
+
 /*Contact Start*/
 .Contact-Container{
     display: flex;
@@ -250,6 +243,24 @@ i.bx {
 
 
 /*Media Quiers*/
+@media (max-width:990px) {
+    .navbar{
+        height: auto !important;
+    }
+}
+@media (max-width:865px) {
+    .Contact-Container{
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+    }
+   
+}
+@media (max-width:768px) {
+    #contact-title{
+        margin-left: 10px;
+    }
+}
 @media (max-width:565px) {
     .card{
         margin-left: 70px;
@@ -266,5 +277,15 @@ i.bx {
         font-size: 16px;
     }
 
+}
+@media (max-width:536px) {
+    .container{
+        margin-top: 0px !important;
+    }
+}
+@media (max-width:330px) {
+    .card{
+        margin-left: 30px !important;
+    }
 }
 

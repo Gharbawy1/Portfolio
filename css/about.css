@@ -206,6 +206,7 @@ ul{
 }*/
 
 /*Drop Down End*/
+
 @media (max-width:992px) {  
     .container ul li{
         padding-right: 20px;
@@ -227,6 +228,11 @@ ul{
     }
     .container ul li{
         display: none;
+    }
+}
+@media (max-width:992px) {
+    .navbar{
+        height: auto !important;
     }
 }
 @media(max-width:928px){
@@ -337,10 +343,12 @@ align-items: center;
         padding-left: 80px;
     }
     .navbar-brand{
-        font-size: 10px;
+        font-size: 17px;
+        margin-top: 5px !important;
     }
     .navbar-toggler{
-        font-size: 10px;
+        font-size: 20px;
+        margin-top: 5px;
     }
 }
 @media (max-width:319px) {
@@ -351,6 +359,8 @@ align-items: center;
         padding-left: 30px;
         margin-bottom: 10px;
     }
-    
+    .navbar-brand{
+        font-size: smaller;
+    }
 }
 
