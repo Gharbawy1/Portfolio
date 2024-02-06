@@ -3,70 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/all.min.css">
     <link rel="stylesheet" href="css/Eduction.css">
-    <title>Personal Portfolio</title>
+      <title>Personal Portfolio</title>
 </head>
 <body>
     <header>
-        <div class = "navbar" >
-            <div>
-                <b><p class="logo">Ahmed </p></b>
-            </div>  
-            <div class="links">
-                <ul class="men-bar">
-                    <li><a href="index.html">Home</a></li>
-                    <li ><a href="about.html" >About</a></li>
-                    <li ><a href="Eduction.html" style="color: green;border-bottom: 1.5px solid goldenrod;
-                        border-bottom-right-radius: 45%;
-                        border-bottom-left-radius: 10%;">Education</a></li>
-                    <li ><a href="https://drive.google.com/file/d/1LJYjP_TqMzviax-fmB7lEMsGc61CX_m9/view?usp=drive_link" target="_blank">Resume</a></li>
-                    <li ><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="menuicon" onclick="toggleDropdown()">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-
-            
+        <!-- NAV START -->
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+          <a class="navbar-brand mr-1 ms-5" href="#">Ahmed <span style="color:gray;letter-spacing:3px;">Elghrabawy</span></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav m-auto ">
+                  <li class="nav-item active">
+                      <a class="nav-link shadow p-2.5 mt-0 bg-in rounded" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link shadow p-2.5 mt-0 bg-in rounded" href="about.html" >About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link shadow p-2.5 mt-0 bg-in rounded" href="https://drive.google.com/file/d/1LJYjP_TqMzviax-fmB7lEMsGc61CX_m9/view?usp=drive_link"
+                      >Resume</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link shadow p-2.5 mt-0 bg-in rounded" href="Eduction.html">Education</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link shadow p-2.5 mt-0 bg-in rounded"  href="contact.html">Contact</a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+        <!-- NAV END -->
     </header>
 
     <div class="section-title">
         <h2>Eduction</h2>
     </div>
-    <div class="row">
-        <div class="col-lg-12" data-aos="fade-up" style="display: inline-block">
-          <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="
-              padding: 0px 0px;
-              padding-bottom: 5px;
-              display: inline-block;
-            ">
-            <img src="assets/img/education/ASU.jpg" class="img-fluid" alt="">
-            <!-- <h4 style="text-align:left;"><a href="https://www.asu.edu/" target="_blank" style="color:#12d640">Arizona State University</a><br> </h4> -->
-            <p style="text-align: left; color: #fff; padding: 5px 10px">
-              <em>B. in Computer Engineering</em>
-            </p>
-            <h5 style="text-align: left; padding: 0px 10px">
-                    UPDATED SOON
-            </h5>
-            <h6 style="text-align: left; color: #fff; padding: 0px 10px">
-              Relevant Coursework
-            </h6>
-            <ul style="text-align: left; color: #fff">
-              <li>Soon ..</li>
-              <li>Soon ..</li>
-              <li>Soon ..</li>
-            </ul>
-          </div>
-        </div>
+    <div class="card" style="width: 18rem;height:20rem;">
+      <div class="card-body">
+        <h5 class="card-title" style="font-style:italic ;">B. in Computer Engineering
+
+        </h5>
+        <h5 class="card-subtitle mb-2 text-muted">From to Date University </h5>
+        <h6 class="card-text">Relvant Courses</h6>
+        <a href="#" class="card-link">Updated Soon ..</a>
+        <a href="#" class="card-link">Updated Soon ..</a>
       </div>
+    </div>
     <div class="section2-title">
         <h2>Online Certifications</h2>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var navbarToggler = document.querySelector('.navbar-toggler');
+            var navbarMenu = document.querySelector('.navbar-collapse');
+            var navLinks = document.querySelectorAll('.nav-link');
+    
+            navbarToggler.addEventListener('click', function () {
+                if (navbarMenu.classList.contains('show')) {
+                    navbarMenu.classList.remove('show');
+                    // Remove the shadow class from all nav links
+                    navLinks.forEach(function (link) {
+                        link.classList.remove('clicked');
+                    });
+                } else {
+                    navbarMenu.classList.add('show');
+                    // Add the shadow class to all nav links
+                    navLinks.forEach(function (link) {
+                        link.classList.add('clicked');
+                    });
+                }
+                navbarMenu.style.zIndex = '999'; // Set a higher z-index value
+            });
+        });
+    </script>
+    <style>
+        .clicked{
+            box-shadow: none;
+        }
+    </style>
+    
 
-
-
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
 
 </body>
 </html>

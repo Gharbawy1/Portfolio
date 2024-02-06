@@ -17,14 +17,11 @@ body{
 /*<li>*/
 .nav-item{
     margin-left: 50px; 
-    transition: border 1s;
 }
 /*<a>*/
 .nav-link:hover{
-    border-bottom: 1.5px solid goldenrod;
-    border-bottom-right-radius: 45%;
-    border-bottom-left-radius: 10%;
-    font-size: larger;
+    font-size: 20px;
+    background-color: #0d315b;
 }
 .nav-link{
     color: white !important;
@@ -34,8 +31,9 @@ body{
 .nav-link:hover{
     color: green !important;
 }
-
-
+.nav-item {
+    box-shadow: 2px 2px 5px rgba(59, 14, 14, 0.2) /* Your custom shadow properties */
+}
 
 /*About Word Top the profile img start*/
 .abt{
@@ -66,7 +64,6 @@ body{
 .main img{
     padding-right: 30px;
     transition: transform 1s;
-    border-radius: 10px;
 }
 .main img:hover{
     opacity: 0.6;

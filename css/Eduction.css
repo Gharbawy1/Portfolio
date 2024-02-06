@@ -6,102 +6,52 @@
     box-sizing: border-box;
 
 }   
+.clicked {
+    box-shadow:none; /* your desired shadow style */;
+}
+h2{
+    font-size: 15px;
+    display: inline-block;
+}
 body{
     background-color:  #04101e;
     font-family: 'Trebuchet MS', sans-serif;
     background-size: cover;
 }
+/*Nav bar start */
 .navbar{
-    display: flex;
     background-color: #09203a;
-    justify-content: space-between;
-    height: 70px;
-    
-
+    height: 80px;
 }
-.men-bar{ 
-    list-style: none;
-    display: flex;
-    padding-right: 150px;
-    font-family: "Poppins", sans-serif;
+/*<li>*/
+.nav-item{
+    margin-left: 50px; 
+    transition: border 1s;
 }
-.men-bar li{
-    padding: 25px 25px;
-    font-size: smaller;
-}
-.navbar .men-bar li a{
-    color:white;
-    text-decoration: none;
-    transition: color 0.5s;
-    font-size: 15px;
-    transition: font-size 1s;
-
-}
-.navbar .men-bar li a:hover{
-    color: rgb(3, 156, 3);
+/*<a>*/
+.nav-link:hover{
     border-bottom: 1.5px solid goldenrod;
     border-bottom-right-radius: 45%;
     border-bottom-left-radius: 10%;
-    font-size: 17px;
+    font-size: larger;
 }
-.navbar p{
-    color:azure;
-    padding-top: 18px;
-    padding-left: 20px;
-    font-family: 'Libre Baskerville', serif;
-    font-size: 22px;
+.nav-link{
+    color: white !important;
+    transition: color 1.5s;
+    transition: font-size 2s;
 }
-.navbar p::after{
-    content: "Elghrabawy";
-    color:darkslategrey;
-    font-weight: bold;
-    font-size:25px;
+.nav-link:hover{
+    color: green !important;
 }
-.row{
-    display: flex;
-    background-color: #0d2847;
-    width: 270px;
-    height: 300px;
-    margin-left: 150px;
+.nav-item {
+    box-shadow: 2px 2px 5px rgba(59, 14, 14, 0.2) /* Your custom shadow properties */
 }
-.row li{
-    margin-left: 30px;
-    padding: 20px;
-}
-@media(max-width:928px){
-    .main {
-        flex-direction: column;
-        align-items: center;
-    }
-    .main img{
-        margin-bottom:10px ;
-        width: 550px;
-        height: 660px;
-    }
-    .description p{
-        max-width: 580px;
-    }
-    .links{
-        display: none;
-    }
-    .menuicon{
-        margin-top: 20px;
-        margin-right: 50px;
-        cursor: pointer;
-    }
-    .menuicon div{
-        width: 25px;
-        height: 3.5px;
-        border: none;
-        border-radius: 25%; 
-        background-color: white;
-        margin: 7px;
-    }
-}
+/*nav end*/
+
+/*Education title*/
 .section-title{
     color: white;
     text-transform: uppercase;
-    line-height: 1px;
     margin:20px 0px 20px 150px;
     letter-spacing: 2px;
     font-size: 10px;
@@ -117,40 +67,37 @@ body{
     background: #dee2e6;
     margin: 4px 10px;
 }
+/*main section start*/
+.card{
+    margin-left: 200px;
+    background-color: #113158;
+}
+.card a{
+    text-decoration: none;
+}
+/*main section end*/
 
 /*Cousre section Start*/
-.Courses-Section{
-    width: 300px;
-    height: 270px;
-    margin-left: 160px;
-    background-color: #0d2847;
-}
-.Courses-Section:hover{
-    background-color: #143a67;
-}
-.Courses-Section p{
-    color: white;
-    font-style: italic;
-    padding-left: 20px;
-}
-.section2-title{
+.section2-title {
     color: white;
     text-transform: uppercase;
-    line-height: 1px;
-    margin:80px 0px 20px 150px;
+    line-height: 1px; /* This seems like a very small value, consider increasing it for readability */
+    margin: 80px 0px 20px 150px;
     letter-spacing: 2px;
-    font-size: 10px;
+    font-size: 10px; /* This font size seems very small, consider increasing it for better visibility */
     font-weight: 500;
     padding: 0;
     font-family: "Poppins", sans-serif;  
 }
+
 .section2-title::after {
     content: "";
     width: 100px;
     height: 1px;
     display: inline-block;
     background: #dee2e6;
-    margin: 4px 230px;
+    margin: 4px 10px;
+    vertical-align: middle; /* Align the ::after shape vertically in the middle */
 }
 @media (max-width:865px) {
     .Contact-Container{
@@ -301,8 +248,22 @@ i.bx {
   }
 
 
+/*Media Quiers*/
+@media (max-width:565px) {
+    .card{
+        margin-left: 70px;
+        width: 240px !important;
+    }
+    .section-title{
+        margin-left: 70px;
+    }
+    .section2-title{
+        margin-left: 70px;
+    }
+    .navbar-brand {
+        letter-spacing: 1;
+        font-size: 16px;
+    }
 
+}
 
-
-  
-  

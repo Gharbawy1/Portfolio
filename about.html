@@ -10,6 +10,7 @@
     <!-- BootStrap -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/all.min.css">
+
     <!-- Icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!-- JQuery -->
@@ -23,35 +24,50 @@
     
     <header>
         <!-- Nav Bar Start -->
-        <nav class="navbar navbar-expand-lg navbar-dark ">
-            <a class="navbar-brand mr-1 ms-5" href="#">Ahmed <span style="color:gray;letter-spacing:3px;">Elghrabawy</span></a>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="height: 100px;">
+            <a class="navbar-brand mr-1 ms-5" href="index.html">Ahmed <span style="color:gray;letter-spacing:3px;">Elghrabawy</span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto ">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link shadow p-2.5 mt-0 bg-in rounded"  href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link shadow p-2.5 mt-0 bg-in rounded" href="about.html" >About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://drive.google.com/file/d/1LJYjP_TqMzviax-fmB7lEMsGc61CX_m9/view?usp=drive_link"
+                        <a class="nav-link shadow p-auto mt-0 bg-in rounded" href="https://drive.google.com/file/d/1LJYjP_TqMzviax-fmB7lEMsGc61CX_m9/view?usp=drive_link"
                         >Resume</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Eduction.html">Education</a>
+                        <a class="nav-link shadow p-auto mt-0 bg-in rounded" href="Eduction.html">Education</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link shadow p-auto mt-0 bg-in rounded" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
             <!-- Nav Bar End -->
     </header>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          var navbarToggler = document.querySelector('.navbar-toggler');
+          var navbarMenu = document.querySelector('.navbar-collapse');
+          
+          navbarToggler.addEventListener('click', function () {
+              if (navbarMenu.classList.contains('show')) {
+                  navbarMenu.classList.remove('show');
+              } else {
+                  navbarMenu.classList.add('show');
+              }
+              navbarMenu.style.zIndex = '999'; // Set a higher z-index value
+          });
+      });
+  </script>
+  
     <p class="abt">ABOUT
     </p>
     <!-- Main Section Start -->
@@ -169,7 +185,8 @@
           </div>
         
         <!-- Intersts Section End -->
-
+       
+      
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/all.min.js"></script>
 </body>
