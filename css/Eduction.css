@@ -6,6 +6,9 @@
     box-sizing: border-box;
 
 }   
+a{
+    text-decoration: none;
+}
 .clicked {
     box-shadow:none; /* your desired shadow style */;
 }
@@ -31,9 +34,8 @@ body{
 /*<a>*/
 .nav-link:hover{
     border-bottom: 1.5px solid goldenrod;
-    border-bottom-right-radius: 45%;
-    border-bottom-left-radius: 10%;
     font-size: larger;
+    background-color: #09203a !important;
 }
 .nav-link{
     color: white !important;
@@ -178,6 +180,7 @@ i.bx {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+
 .container{
     display: flex;
     flex-wrap: wrap;
