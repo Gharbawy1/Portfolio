@@ -17,6 +17,12 @@
     <title>Personal Portfolio</title>
   </head>
   <body>
+    <div class="bg-animation">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+      <div id="stars4"></div>
+  </div>
     <div class="dropdown-container">
       <div class="menuicon">
         <button id="showListButton"><i class="ri-menu-add-line"></i></button>
@@ -140,5 +146,21 @@
         });
       });
     </script>
+    
+    <div class="Update-Inform">
+        <h1>UPDATE COMING SOON ....</h1>
+    </div>
+    <style>
+      .Update-Inform{
+        color: burlywood;
+        margin-top: 400px;
+        text-align: center;
+        animation: colorchange 2s alternate-reverse infinite;
+      }
+      @keyframes colorchange {
+          from{color:  burlywood;}
+          to {color: rgb(113, 88, 49)};
+      }
+    </style>
   </body>
 </html>

@@ -21,15 +21,12 @@ body{
 /*<a>*/
 .nav-link:hover{
     font-size: 20px;
-    background-color: #0d315b;
+    color: green !important;
 }
 .nav-link{
     color: white !important;
     transition: color 1.5s;
     transition: font-size 2s;
-}
-.nav-link:hover{
-    color: green !important;
 }
 
 /*About Word Top the profile img start*/

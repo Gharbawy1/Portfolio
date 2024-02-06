@@ -33,8 +33,8 @@ body{
 }
 /*<a>*/
 .nav-link:hover{
-    border-bottom: 1.5px solid goldenrod;
     font-size: larger;
+    color:green !important;
     background-color: #09203a !important;
 }
 .nav-link{
@@ -42,9 +42,7 @@ body{
     transition: color 1.5s;
     transition: font-size 2s;
 }
-.nav-link:hover{
-    color: green !important;
-}
+
 
 /*nav end*/
 
