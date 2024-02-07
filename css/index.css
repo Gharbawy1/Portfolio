@@ -1477,6 +1477,7 @@ type writer start we can use "typed js"
         transform: translateY(0);
     }
 }
+
 /* design ball in scroll icon*/
 .scroll-icon__wheel-outer {
     display: block;
@@ -1489,6 +1490,7 @@ type writer start we can use "typed js"
     border-radius: 0.4em;
     overflow: hidden;
 }
+
 /*animate the designd ball */
 .scroll-icon__wheel-inner {
     display: block;
@@ -1507,8 +1509,10 @@ type writer start we can use "typed js"
     height: 3em;
     width: 1.5em;
     border: 0.25em solid #fff;
-    border-radius: 1em;/*with out it the icon will be a square */
+    border-radius: 1em;
+    /*with out it the icon will be a square */
 }
+
 /*block which contain the icon*/
 .example {
     display: flex;
