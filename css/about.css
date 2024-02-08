@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    
 }
 .ene-icon{
     width: 50px;
@@ -276,7 +277,10 @@ ul {
         flex-direction: column;
         align-items: center;
     }
-
+    .ene-icon{
+        width: 50px !important;
+        height: 15px !important;
+    }
     .main img {
         margin-bottom: 30px;
         width: 550px;
