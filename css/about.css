@@ -5,7 +5,9 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
+.ene-icon{
+    width: 50px;
+}
 body {
     background-color: #04101e;
     font-family: 'Trebuchet MS', sans-serif;
