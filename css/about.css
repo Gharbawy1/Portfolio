@@ -39,11 +39,15 @@ body {
 
 /*About Word Top the profile img start*/
 .abt {
-    color: white;
-    font-size: 12px;
-    padding-left: 250px;
-    padding-top: 10px;
-
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 50px 0px 20px 230px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #dee2e6;
+    font-family: "Poppins", sans-serif;
 }
 
 .abt::after {
@@ -134,8 +138,9 @@ body {
     font-weight: 500;
     padding: 0;
     line-height: 1px;
-    margin: 50px 0px 20px 230px;
     letter-spacing: 2px;
+    margin-left: 50px;
+    margin-bottom: 20px;
     text-transform: uppercase;
     color: #dee2e6;
     font-family: "Poppins", sans-serif;
